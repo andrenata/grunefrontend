@@ -95,6 +95,11 @@ h1.CarName {
   margin-left: 3px;
 }
 
+.displayMobile {
+  height: 0;
+  overflow: hidden;
+}
+
 .header {
   background-color: #406a7f;
   color: #fff;
@@ -245,6 +250,58 @@ h1.CarName {
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   height: 50px;
+}
+
+.icon {
+  color: #fff;
+  float: right;
+  margin-top: 15px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: block;
+}
+.icon:visited {
+  color: #fff;
+}
+.icon:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul#myLinks {
+  padding: 0;
+  margin: 0;
+}
+ul#myLinks li {
+  background-color: #406a7f;
+}
+ul#myLinks li a {
+  padding: 10px 15px;
+  display: block;
+}
+ul#myLinks li a:hover {
+  background-color: #66777f;
+}
+
+#myLinks a {
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .displayWidth {
+    display: none;
+  }
+
+  .displayMobile {
+    height: auto;
+    overflow: auto;
+  }
+
+  .AreaFnQ {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

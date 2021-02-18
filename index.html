@@ -30,14 +30,14 @@
     <div class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-8">
                     <div class="logo">
                         <a href="index.html"><img src="assets/img/logo/tc-white-logo.svg" alt="Cars"></a>
                     </div>
                 </div> 
                 <!-- md-3 -->
-                <div class="col-md-9">
-                    <ul class="nav justify-content-end CutomMenu">
+                <div class="col-md-9 col-4">
+                    <ul class="nav justify-content-end CutomMenu displayWidth">
                         <li class="nav-item">
                           <a class="nav-link active" href="#">Home</a>
                         </li>
@@ -53,13 +53,42 @@
                         <li class="nav-item">
                           <a class="nav-link NavLoginButton" href="#">Login</a>
                         </li>
-                      </ul>
+                    </ul>
+
+                    <div class="displayMobile">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">MENU</a>
+                    </div>
+                    
                 </div>
                 <!-- md-9 -->
+                
             </div>
+
+            
         </div>
     </div>
     <!-- END HEADER -->
+
+    <div class="topnav displayMobile">
+        <ul id="myLinks">
+          <li><a href="#news">News</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+        
+    </div>
+
+    <script>
+        document.getElementById("myLinks").style.display="none";
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
 
     <!-- SLIDER -->
     <div class="HomeSlider">

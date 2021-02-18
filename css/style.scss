@@ -25,6 +25,7 @@ $button: #66a9cc;
 a { 
     color: $blue; 
     text-decoration: none; 
+    
 }
 
 .DefaultTitle {
@@ -88,6 +89,10 @@ h1.CarName {
     margin-left: 3px;
 }
 
+.displayMobile {
+    height: 0;
+    overflow: hidden;
+}
 
 // HEADER
 .header {
@@ -256,3 +261,60 @@ h1.CarName {
     height: 50px;    
 }
 
+// MOBILE
+.icon {
+    color: $white;
+    float: right;
+    margin-top: 15px;
+    font-weight: bold;
+    border: 1px solid $white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: block;
+    &:visited {
+        color: $white;
+    }
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+
+ul#myLinks {
+    padding: 0;
+    margin: 0;
+
+    li {
+        background-color: $blue;
+
+        a {
+            padding: 10px 15px;
+            display: block;
+            &:hover {
+                background-color: $grey;
+            }
+        }
+    }
+}
+
+#myLinks {
+    a {
+        color: $white;
+    }
+}
+
+
+
+@media (max-width: 767.98px) { 
+    .displayWidth {
+        display: none;
+    }
+    .displayMobile {
+        height: auto;
+        overflow: auto;
+    }
+    .AreaFnQ {
+        width: 100%;
+    }
+}
