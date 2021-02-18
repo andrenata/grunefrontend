@@ -1,0 +1,43 @@
+// CUSTOM CSS
+// by Andre Nata
+// ================
+body {
+    font-family: 'PT Sans', Tahoma, sans-serif;
+}
+
+// VARIABLE
+$blue: #406a7f;
+$white: #fff;
+$black: #2f3134;
+$yellow: #f2e11c;
+
+// HEADER
+.header {
+    background-color: $blue;
+    color: #fff;
+    padding: 10px 0;
+
+    .logo {
+        max-width: 200px;
+    }
+    .nav {
+        padding-top: 15px;
+    }
+    .nav li a {
+        color: $white;
+        &:hover {
+            color: $yellow;
+        }
+    }
+    .NavLoginButton {
+        display: inline-block;
+        border: 1px solid $white;
+        border-radius: 3px;
+    }
+}
+
+// SLIDER
+.HomeSlider {
+    
+    
+}
