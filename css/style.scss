@@ -11,6 +11,26 @@ $white: #fff;
 $black: #2f3134;
 $yellow: #f2e11c;
 
+.DefaultTitle {
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.BoxDefault {
+    padding: 20px;
+}
+.BoxGrey {
+    background-color: #f7f7f7;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
+}
+h1.CarName {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
 // HEADER
 .header {
     background-color: $blue;
@@ -36,8 +56,27 @@ $yellow: #f2e11c;
     }
 }
 
-// SLIDER
-.HomeSlider {
-    
-    
+// WELCOME TEXT
+.WelcomeText {
+    text-align: center;
+    color: $black;
+    padding: 30px 0 20px 0;
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+// CATALOG GRID
+.CarCatalogGrid {
+    margin-bottom: 10px;
+
+    .form-check-input {
+        float: right;
+        position: relative;
+    }
 }
