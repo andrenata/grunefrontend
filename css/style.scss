@@ -44,6 +44,12 @@ a {
     -moz-box-shadow: 2px 7px 9px -4px rgba(131,128,128,0.62);
     margin-bottom: 20px;
 }
+.BtnShadow {
+    border: none;
+    box-shadow: 2px 7px 9px -4px rgba(131,128,128,0.62);
+    -webkit-box-shadow: 2px 7px 9px -4px rgba(131,128,128,0.62);
+    -moz-box-shadow: 2px 7px 9px -4px rgba(131,128,128,0.62);
+}
 .BoxGrey {
     background-color: #f7f7f7;
 }
@@ -61,6 +67,20 @@ h1.CarName {
 }
 .logo {
     max-width: 200px;
+}
+
+// ICON
+.iconSmall {
+    max-height: 10px;
+    margin-left: 3px;
+}
+.iconMedium {
+    max-height: 15px;
+    margin-left: 3px;
+}
+.iconLarge {
+    max-height: 20px;
+    margin-left: 3px;
 }
 
 
@@ -98,6 +118,30 @@ h1.CarName {
     }
     p {
         margin-bottom: 5px;
+    }
+}
+
+// BEST PRODUCTS
+.col-3.float-left {
+    padding: 10px;
+
+    .SlideCar {
+        box-shadow: 2px 7px 9px -4px rgb(131 128 128 / 62%);
+        -webkit-box-shadow: 2px 7px 9px -4px rgb(131 128 128 / 62%);
+        -moz-box-shadow: 2px 7px 9px -4px rgba(131,128,128,0.62);
+    }
+}
+
+.SlideCarDesc {
+    padding: 10px;
+    h2, h3 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+
+    .AreaDetail {
+        padding: 10px 0 0 0;
     }
 }
 
@@ -193,5 +237,11 @@ h1.CarName {
     }
 }
 
-
+// CUSTOM BOOTRAP CSS
+.carousel-control-prev-icon {
+    background-image: url('../assets/img/icon/arrowLeftSlide.png');
+}
+.carousel-control-next-icon {
+    background-image: url('../assets/img/icon/arrowLeftSlide.png');
+}
 

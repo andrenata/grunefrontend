@@ -45,6 +45,13 @@ a {
   margin-bottom: 20px;
 }
 
+.BtnShadow {
+  border: none;
+  box-shadow: 2px 7px 9px -4px rgba(131, 128, 128, 0.62);
+  -webkit-box-shadow: 2px 7px 9px -4px rgba(131, 128, 128, 0.62);
+  -moz-box-shadow: 2px 7px 9px -4px rgba(131, 128, 128, 0.62);
+}
+
 .BoxGrey {
   background-color: #f7f7f7;
 }
@@ -66,6 +73,21 @@ h1.CarName {
 
 .logo {
   max-width: 200px;
+}
+
+.iconSmall {
+  max-height: 10px;
+  margin-left: 3px;
+}
+
+.iconMedium {
+  max-height: 15px;
+  margin-left: 3px;
+}
+
+.iconLarge {
+  max-height: 20px;
+  margin-left: 3px;
 }
 
 .header {
@@ -99,6 +121,27 @@ h1.CarName {
 }
 .WelcomeText p {
   margin-bottom: 5px;
+}
+
+.col-3.float-left {
+  padding: 10px;
+}
+.col-3.float-left .SlideCar {
+  box-shadow: 2px 7px 9px -4px rgba(131, 128, 128, 0.62);
+  -webkit-box-shadow: 2px 7px 9px -4px rgba(131, 128, 128, 0.62);
+  -moz-box-shadow: 2px 7px 9px -4px rgba(131, 128, 128, 0.62);
+}
+
+.SlideCarDesc {
+  padding: 10px;
+}
+.SlideCarDesc h2, .SlideCarDesc h3 {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+.SlideCarDesc .AreaDetail {
+  padding: 10px 0 0 0;
 }
 
 .AllCars {
@@ -181,6 +224,10 @@ h1.CarName {
 .copyright p {
   color: #fff;
   font-size: 18px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../assets/img/icon/arrowLeftSlide.png");
 }
 
 /*# sourceMappingURL=style.css.map */
