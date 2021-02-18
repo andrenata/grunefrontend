@@ -75,6 +75,11 @@ h1.CarName {
   max-width: 200px;
 }
 
+.DefaultButtonColor {
+  background-color: #66a9cc;
+  border: none;
+}
+
 .iconSmall {
   max-height: 10px;
   margin-left: 3px;
@@ -228,6 +233,18 @@ h1.CarName {
 
 .carousel-control-prev-icon {
   background-image: url("../assets/img/icon/arrowLeftSlide.png");
+}
+
+.carousel-control-next-icon {
+  background-image: url("../assets/img/icon/arrowRightSlide.png");
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

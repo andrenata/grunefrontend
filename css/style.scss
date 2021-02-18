@@ -20,6 +20,7 @@ $white: #fff;
 $grey : #66777f;
 $black: #2f3134;
 $yellow: #f2e11c;
+$button: #66a9cc;
 
 a { 
     color: $blue; 
@@ -67,6 +68,10 @@ h1.CarName {
 }
 .logo {
     max-width: 200px;
+}
+.DefaultButtonColor {
+    background-color: $button;
+    border: none;
 }
 
 // ICON
@@ -242,6 +247,12 @@ h1.CarName {
     background-image: url('../assets/img/icon/arrowLeftSlide.png');
 }
 .carousel-control-next-icon {
-    background-image: url('../assets/img/icon/arrowLeftSlide.png');
+    background-image: url('../assets/img/icon/arrowRightSlide.png');
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    height: 50px;    
 }
 
