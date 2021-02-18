@@ -4,12 +4,27 @@
 body {
     font-family: 'PT Sans', Tahoma, sans-serif;
 }
+p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+h1 { font-size: 26px; }
+h2 { font-size: 24px; }
+h3 { font-size: 22px; }
+
 
 // VARIABLE
 $blue: #406a7f;
 $white: #fff;
+$grey : #66777f;
 $black: #2f3134;
 $yellow: #f2e11c;
+
+a { 
+    color: $blue; 
+    text-decoration: none; 
+}
 
 .DefaultTitle {
     font-size: 26px;
@@ -17,17 +32,35 @@ $yellow: #f2e11c;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+.TitleBorderLeft {
+    border-left: 3px solid $blue;
+    padding-left: 10px;
+}
 
 .BoxDefault {
     padding: 20px;
+    box-shadow: 2px 7px 9px -4px rgba(131,128,128,0.62);
+    -webkit-box-shadow: 2px 7px 9px -4px rgba(131,128,128,0.62);
+    -moz-box-shadow: 2px 7px 9px -4px rgba(131,128,128,0.62);
+    margin-bottom: 20px;
 }
 .BoxGrey {
     background-color: #f7f7f7;
-    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);
 }
 h1.CarName {
     font-size: 16px;
     line-height: 18px;
+}
+.BtnRight {
+    position: relative;
+    float: right;
+}
+.BtnCenter {
+    position: relative;
+    text-align: center;
+}
+.logo {
+    max-width: 200px;
 }
 
 
@@ -37,9 +70,6 @@ h1.CarName {
     color: #fff;
     padding: 10px 0;
 
-    .logo {
-        max-width: 200px;
-    }
     .nav {
         padding-top: 15px;
     }
@@ -72,6 +102,9 @@ h1.CarName {
 }
 
 // CATALOG GRID
+.AllCars {
+    padding: 30px 0;
+}
 .CarCatalogGrid {
     margin-bottom: 10px;
 
@@ -80,3 +113,85 @@ h1.CarName {
         position: relative;
     }
 }
+
+// FnQ
+.AreaFnQ {
+    padding: 30px;
+    width: 70%;
+    margin: 0 auto;
+    .HeaderFnQ {
+        border-bottom: 2px solid $blue;
+
+        h2 {
+            font-size: 26px;
+            line-height: 28px;
+            margin-bottom: 10px;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style-type: none;
+            margin-top: 10px;
+            padding-left: 15px;
+            border-left: 2px solid $blue;
+            h1 {
+                font-size: 18px;
+                font-weight: bold;
+                a {
+                    color: $black;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+// FOOTER
+.AreaFooter {
+    background-color: $grey;
+    padding: 30px 0;
+    color: $white;
+    .LineRight {
+        border-right: 3px solid $blue;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            margin-bottom: 5px;
+            list-style-type: none;
+
+            a {
+                color: $white;
+                text-decoration: none;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
+
+// COPYRIGHT
+.copyright {
+    padding: 20px 0;
+    background-color: $blue;
+    p {
+        color: $white;
+        font-size: 18px;
+    }
+}
+
+
+
